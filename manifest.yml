@@ -1,0 +1,6 @@
+---
+applications:
+- disk_quota: 1GB
+  name: dmxz2
+  random-route: true
+  memory: 128M
