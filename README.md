@@ -14,7 +14,7 @@ PASS
 
 
 DOCKER
-DOCKER项目的名称例如xxxxx/v2ray
+DOCKER项目的名称例如byxiaopeng/ibm-docker:latest
 
 MINGCHENG
 域名的前缀 和项目的名称
