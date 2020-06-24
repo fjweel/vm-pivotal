@@ -10,18 +10,19 @@ jobs:
         sudo apt-get -y update
         sudo apt-get -y install wget
         sudo apt-get -y install curl
-    - name: Clone source
+    - name: Clone source cf
       run: |
         cd /home/runner
         curl -LO https://s3-us-west-1.amazonaws.com/cf-cli-releases/releases/v6.51.0/cf-cli_6.51.0_linux_x86-64.tgz
         tar zxvf cf-cli_6.51.0_linux_x86-64.tgz
-        #太高版本还不行  真坑
         chmod +x ./cf
         sudo mv ./cf /usr/bin/cf
-        mv /home/runner/work/vm-pivotal/vm-pivotal/manifest.yml /home/runner/manifest.yml
     - name: go kaishi
       run: |
+        mkdir /home/runner/cf
+        cd /home/runner/cf
+        mv /home/runner/work/vm-pivotal/vm-pivotal/manifest.yml /home/runner/cf/manifest.yml
         cf api api.run.pivotal.io
         cf login -u ${{ secrets.USER }} -p ${{ secrets.PASS }}
         #要部署的docker项目
-        cf push pengss --docker-image ${{ secrets.docker }}
+        cf push ${{ secrets.mingcheng }} --docker-image ${{ secrets.docker }}
