@@ -18,3 +18,8 @@ DOCKER项目的名称例如byxiaopeng/ibm-docker:latest
 
 MINGCHENG
 域名的前缀 和项目的名称
+
+
+关于WebSocket读一下方链接  
+
+https://docs.run.pivotal.io/release-notes/
