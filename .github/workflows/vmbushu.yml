@@ -24,5 +24,4 @@ jobs:
         mv /home/runner/work/vm-pivotal/vm-pivotal/manifest.yml /home/runner/cf/manifest.yml
         cf api api.run.pivotal.io
         cf login -u ${{ secrets.USER }} -p ${{ secrets.PASS }}
-        #要部署的docker项目
         cf push ${{ secrets.mingcheng }} --docker-image ${{ secrets.docker }}
