@@ -1,6 +1,6 @@
 # vm-pivotal
 
-黄了？？？
+
 首先注册https://run.pivotal.io/pricing/
 
 注册步骤略过
