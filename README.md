@@ -23,3 +23,5 @@ MINGCHENG
 关于WebSocket读一下方链接  
 
 https://docs.run.pivotal.io/release-notes/
+
+6.28重新申请了账户 继续部署
