@@ -1,5 +1,6 @@
 ---
 applications:
 - disk_quota: 2GB
+  command: /entrypoint.sh
   random-route: true
   memory: 128M
