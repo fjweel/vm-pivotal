@@ -14,10 +14,11 @@ PASS
 
 
 DOCKER
-DOCKER项目的名称例如byxiaopeng/ibm-docker:latest
+DOCKER项目的名称例如debiankk/live-torrent:latest
 
 MINGCHENG
 域名的前缀 和项目的名称
+
 
 
 关于WebSocket读一下方链接  
